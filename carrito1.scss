@@ -1,0 +1,116 @@
+// Variables comunes
+$font-family: Arial, sans-serif;
+$background-color-body: #f0f0f0;
+$background-color-cart: #fff;
+$border-color: #ccc;
+$border-radius: 5px;
+$width-cart: 300px;
+$padding-cart: 20px;
+$margin-cart: 20px auto;
+$font-size-h2: 1.2em;
+$text-align-h2: center;
+$margin-bottom-h2: 10px;
+$list-style-type: none;
+$margin-bottom-cart-item: 10px;
+$padding-bottom-cart-item: 5px;
+$item-name-font-weight: bold;
+$item-price-float: right;
+$remove-item-bg-color: #ff4d4d;
+$remove-item-color: #fff;
+$remove-item-padding: 5px 10px;
+$remove-item-border-radius: 3px;
+$remove-item-cursor: pointer;
+$cart-total-margin-top: 10px;
+$total-price-font-weight: bold;
+$checkout-button-bg-color: #4CAF50;
+$checkout-button-color: #fff;
+$checkout-button-padding: 10px 20px;
+$checkout-button-border-radius: 5px;
+$checkout-button-cursor: pointer;
+$checkout-button-display: block;
+$checkout-button-margin-top: 20px;
+$checkout-button-width: 100%;
+$checkout-button-font-size: 1em;
+$checkout-button-hover-bg-color: #45a049;
+
+// Estilos generados
+body {
+  font-family: $font-family;
+  background-color: $background-color-body;
+  margin: 0;
+  padding: 0;
+}
+
+.cart {
+  background-color: $background-color-cart;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  width: $width-cart;
+  padding: $padding-cart;
+  margin: $margin-cart;
+
+  h2 {
+    font-size: $font-size-h2;
+    text-align: $text-align-h2;
+    margin-bottom: $margin-bottom-h2;
+  }
+
+  .cart-items {
+    list-style-type: $list-style-type;
+    padding: 0;
+
+    .cart-item {
+      margin-bottom: $margin-bottom-cart-item;
+      border-bottom: 1px solid $border-color;
+      padding-bottom: $padding-bottom-cart-item;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .item-name {
+        font-weight: $item-name-font-weight;
+      }
+
+      .item-price {
+        float: $item-price-float;
+      }
+    }
+  }
+}
+
+.remove-item {
+  background-color: $remove-item-bg-color;
+  color: $remove-item-color;
+  border: none;
+  padding: $remove-item-padding;
+  border-radius: $remove-item-border-radius;
+  cursor: $remove-item-cursor;
+  float: right;
+}
+
+.cart-total {
+  margin-top: $cart-total-margin-top;
+  text-align: right;
+
+  .total-price {
+    font-weight: $total-price-font-weight;
+  }
+}
+
+.checkout-button {
+  background-color: $checkout-button-bg-color;
+  color: $checkout-button-color;
+  border: none;
+  padding: $checkout-button-padding;
+  border-radius: $checkout-button-border-radius;
+  cursor: $checkout-button-cursor;
+  display: $checkout-button-display;
+  margin-top: $checkout-button-margin-top;
+  width: $checkout-button-width;
+  font-size: $checkout-button-font-size;
+
+  &:hover {
+    background-color: $checkout-button-hover-bg-color;
+  }
+}
